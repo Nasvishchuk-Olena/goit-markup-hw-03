@@ -1,0 +1,363 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #000;
+  --secondary-title-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-color: #ffffff;
+  --primary-background-color: #f5f5f5;
+  --secondary-background-color: #f5f4fa;
+  --third-background-color: #2f303a;
+  --white-transparent-color: rgba(255, 255, 255, 0.6);
+  --fourth-background-color: rgba(245, 244, 250, 1);
+  --fifth-background-color: rgba(255, 255, 255, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+
+
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 1600px;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1200px;
+}
+
+/* header */
+ul {
+  list-style: none;
+}
+header {
+  background-color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.logo-studio {
+  margin-left: 40px;
+  color: var(--title-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.logo {
+  color: var(--accent-color);
+}
+
+.site-nav .link {
+  display: block;
+  color: var(--secondary-title-color);
+  text-decoration: none;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+.site-nav {
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+
+.site-nav .item:not(:last-child){margin-right: 50px;}
+
+.contact-link {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.mail,
+.phone {
+  color: inherit;
+  text-decoration: none;
+}
+.mail:hover,
+.mail:focus {
+  color: var(--accent-color);
+}
+.phone:hover,
+.phone:focus {
+  color: var(--accent-color);
+}
+
+/* main */
+
+/* hero */
+
+.hero {
+  background-color: var(--third-background-color);
+  text-align: center;
+  margin-bottom: 94px;
+  height: 600px;
+}
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--secondary-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  min-width: 696px;
+  height: 120px;
+}
+
+.hero .button {
+  display: inline-block;
+  min-width: 216px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  cursor: pointer;
+}
+.hero .button:hover {
+  color: var(--primary-text-color);
+}
+
+/* section2 */
+
+.section-list {
+  margin-top: 0;
+  margin-bottom: 94px;
+}
+
+.title-hiden {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  color: var(--secondary-title-color);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.section .caption {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+/* section 3 */
+.doing-list-img {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+.doing-list-img .item:not(:last-child) {margin-right: 30px;}
+
+.doing-list .title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--secondary-title-color);
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+}
+img {display: block;
+max-height: 100%;
+height: auto;}
+
+/* section 4 */
+
+.members-cards-list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.members {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--secondary-background-color);
+}
+.members-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  text-align: center;
+
+  color: var(--secondary-title-color);
+  font-size: 36px;
+}
+.members .name {
+  text-align: center;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: var(--secondary-title-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.members .card {
+  background-color: var(--fifth-background-color);
+}
+
+.members .card:not(:last-child){margin-right: 30px;}
+
+.card .content {
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--third-background-color);
+}
+.footer .logo-studio {
+  color: var(--secondary-color);
+}
+
+.footer .info {
+  color: var(--secondary-color);
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+
+.footer .link {
+  color: var(--white-transparent-color);
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+}
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
+.footer .info {
+  font-style: normal;
+}
+.footer .link {
+  font-style: normal;
+}
+
+/* STYLES FOR PORTFOLIO */
+
+/* Main */
+
+.page-title {margin: 0;}
+
+.button-portfolio {
+  display: block;
+  border-radius: 4px;
+  min-width: 73px;
+  padding: 6px 22px;
+
+  color: var(--secondary-title-color);
+  background-color: var(--secondary-background-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.button-portfolio.all {
+  padding: 6px 25px;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
+}
+.buttons-items {
+  margin-top: 0px;
+  margin-bottom: 34px ;
+}
+.promo {
+  margin-top: 94px;
+  margin-bottom: 94px;
+  background-color: #ffffff;
+}
+
+.promo .caption {
+  color: var(--secondary-title-color);
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.caption {
+  margin-top: 0px;
+  margin-bottom: 4px;}
+
+.link-cards .title {margin-top: 0px;
+margin-bottom: 0px;}
+
+.promo .title {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+.link-cards {
+  background-color: var(--fifth-background-color);
+}
+.cards-list {margin-top: 0px;
+margin-bottom: 0px;}
+a {
+  text-decoration: none;
+}
