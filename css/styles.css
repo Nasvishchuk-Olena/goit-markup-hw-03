@@ -11,13 +11,16 @@
   --fourth-background-color: rgba(245, 244, 250, 1);
   --fifth-background-color: rgba(255, 255, 255, 1);
   --border-color: #eeeeee;
-}
+  
+
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
+h1,h2,h3,h4,h5,h6,p,ul {margin:0;padding:0;}
 
 body {
   color: var(--primary-text-color);
@@ -36,7 +39,7 @@ body {
   width: 1200px;
 }
 
-/* header */
+
 ul {
   list-style: none;
 }
@@ -54,16 +57,18 @@ a {
   text-decoration: none;
 }
 
+/* header */
+
 .header {
   display: flex;
   justify-items: center;
+
 }
 
 .logo-studio {
   display: flex;
   align-items: center;
-  margin-right: 94px;
-
+  
   color: var(--title-text-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -71,6 +76,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
+
 .logo {
   color: var(--accent-color);
 }
@@ -91,10 +97,7 @@ a {
   color: var(--accent-color);
 }
 .site-nav {
-  padding: 0px;
-
-  margin-top: 0px;
-  margin-bottom: 0px;
+  
 
   display: flex;
   font-weight: 500;
@@ -106,12 +109,16 @@ a {
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
+.site-nav .item:first-child{margin-left: 94px;}
+
 
 .contact-link {
+  
   display: flex;
   align-items: center;
   margin-left: auto;
-  padding: 0px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 
   font-weight: 500;
   font-size: 14px;
@@ -147,11 +154,12 @@ a {
 .hero {
   background-color: var(--third-background-color);
   text-align: center;
-  margin-bottom: 94px;
-  height: 600px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+
 }
 .hero-title {
-  margin-top: 0;
+
   margin-bottom: 30px;
 
   color: var(--secondary-color);
@@ -161,7 +169,7 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   min-width: 696px;
-  height: 120px;
+  
 }
 
 .hero .button {
@@ -188,19 +196,15 @@ a {
 .section-list {
   display: flex;
   gap: 15px;
-  margin-top: 0;
-  margin-bottom: 94px;
-  padding: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.title-hiden {
-  margin-bottom: 0;
-  margin-top: 0;
-}
+.visually-hidden { position: absolute; white-space: nowrap; width: 1px; height: 1px; overflow: hidden; border: 0; padding: 0; clip: rect(0 0 0 0); clip-path: inset(50%); margin: -1px; } 
+img { display: block; max-width: 100%; height: auto; }"
 
 .section-title {
-  margin-top: 0px;
-  margin-bottom: 10px;
+margin-bottom: 10px;
 
   color: var(--secondary-title-color);
   font-size: 14px;
@@ -209,27 +213,21 @@ a {
   text-transform: uppercase;
 }
 .section .caption {
-  margin-top: 0px;
-  margin-bottom: 0px;
-
+  
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
 }
-/* section 3 */
-.doing-list-img {
-  display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
 
-.doing-list-img .item:not(:last-child) {
-  margin-right: 30px;
-}
+/* section 3 */
+
+.doing-list .item {
+display: flex;
+gap: 30px; 
+width: calc (( 100%-60px ) / 3);}
+
 
 .doing-list .title {
-  margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
   color: var(--secondary-title-color);
@@ -242,9 +240,7 @@ a {
 
 .members-cards-list {
   display: flex;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .members {
@@ -253,17 +249,20 @@ a {
   background-color: var(--secondary-background-color);
 }
 .members-title {
-  margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
 
   color: var(--secondary-title-color);
   font-size: 36px;
 }
+
+.card-info {padding-top: 30px;
+padding-bottom: 30px;}
+
 .members .name {
   text-align: center;
 
-  margin-top: 30px;
+
   margin-bottom: 10px;
 
   color: var(--secondary-title-color);
@@ -277,14 +276,10 @@ a {
 }
 
 .members .card:not(:last-child) {
-  margin-right: 30px;
-}
+  margin-right: 30px;}
 
 .card .content {
   text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -308,24 +303,25 @@ a {
 }
 
 .footer .link {
+  margin-bottom: 9px;
   color: var(--white-transparent-color);
   font-size: 14px;
   line-height: 2;
   letter-spacing: 0.03em;
+  font-style: normal;
 }
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
 }
 .footer .info {
+  margin-bottom: 9px;
   font-style: normal;
+  
 }
-.footer .link {
-  font-style: normal;
-}
-.footer ul {
-  padding: 0;
-}
+
+.footer ul { padding: 0;
+} 
 
 /* STYLES FOR PORTFOLIO */
 
@@ -411,5 +407,5 @@ a {
   margin-top: 0px;
   margin-bottom: 0px;
   padding: 0px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
